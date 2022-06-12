@@ -1,0 +1,111 @@
+.productDetail{
+    width: 100%;
+    height: 100vh;
+    padding-top: 20px;
+}
+.backImage img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    object-fit: fill;
+    /* animation: imageAnimation 15s linear 0.1s infinite normal none; */
+}
+.dark{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -10;
+}
+.productDetail h2{
+    color: white;
+}
+.insideImage{
+    width: 500px;
+    height: 300px;
+    border: 5px solid white;
+}
+.pageDetails{
+    color: black;
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+}
+.pageDetails__container{
+    background-color: white;
+    border: 1px solid black;
+    width: 70%;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+}
+.pageDetails__container h1{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pageDetails__container h2{
+    font-size: 22px;
+    color: black;
+    margin-top: 10px;
+}
+.pageDetails__container h2 span{
+    font-size: 16px;
+    color: grey;
+}
+
+.pageDetails .buttons{
+    padding-top: 30px;
+}
+.pageDetails .buttons button:nth-child(1){
+    border: 1px solid red;
+    width: 50px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: white;
+    cursor: pointer;
+  }
+  .pageDetails .buttons button:nth-child(2){
+    font-size: 18px;
+    border: 1px solid black;
+    width: 220px;
+   height: 42px;
+    margin-left: 15px;
+    border-radius: 2px;
+    background-color: white;
+    cursor: pointer;
+  }
+@keyframes imageAnimation {
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1.4)
+    }
+}
+@media(max-width:600px){
+    .pageDetails__container{
+        margin-top:80px;
+    }
+    .pageDetails{
+        flex-direction: column;
+    }
+    .insideImage{
+        width: 300px;
+        height: 200px;
+    }
+    .backImage, .dark{
+        display: none;
+    }
+}

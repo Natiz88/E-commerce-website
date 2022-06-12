@@ -1,0 +1,14 @@
+.container {
+    background-color: white;
+    padding-top: 50px;
+  }
+.products {
+    font-family: sans-serif;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    padding-top: 60px;
+  }

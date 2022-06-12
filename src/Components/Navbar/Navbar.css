@@ -1,0 +1,112 @@
+.nav {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+  }
+  .nav .logo {
+    width: 10%;
+    cursor: pointer;
+  }
+  .nav .links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(221, 210, 210);
+  }
+  .nav .links i{
+    cursor: pointer;
+  }
+  .nav .links-expanded {
+    position: absolute;
+    height: 100vh;
+    top:80px;
+    overflow: auto;
+    width: 100%;
+    background-color: black;
+    color:grey;
+    display: flex;
+    justify-content: space-around;
+    transition: display 5s ease-in;
+  }
+  .nav .links-expanded:hover{
+    color:white;
+  }
+  .nav .links-expanded a {
+    color: grey;
+    text-decoration: none;
+  }
+  .nav .links-expanded a:hover{
+    color: white;
+  }
+  .nav .links-expanded .categories {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 60%;
+    align-items:center;
+    font-size: 25px;
+  }
+  .nav .links-expanded .baskets {
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    height: 20%;
+    font-size: 25px;
+  }
+  .nav .links-expanded .baskets i{
+    color: gray;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  .nav .links-expanded .baskets i:hover{
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav .links a {
+    color: rgb(223, 219, 219);
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .categories {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    color: black;
+  }
+  .baskets {
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    font-size: 20px;
+  }
+  .nav img {
+    width: 60px;
+    height: 60px;
+  }
+  .hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .baskets span{
+    margin-left: 12px;
+  }
+  
+  @media (max-width: 600px) {
+    .hamburger-menu {
+      display: block;
+    }
+    .nav .links {
+      display: none;
+    }
+  }
+  
