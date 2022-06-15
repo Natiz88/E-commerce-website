@@ -38,14 +38,14 @@ function Navbar() {
       )}
 
       <div className="logo">
-        <Link to="/E-commerce-website">
+        <Link to="/">
           <img src={Image} alt="" />
         </Link>
       </div>
 
       <div className={isOn ? "links-expanded" : "links"}>
         <div className="categories">
-          <Link to="/E-commerce-website">Products</Link>
+          <Link to="/">Products</Link>
           <a href="">About</a>
           <a href="">Sign Up</a>
         </div>
