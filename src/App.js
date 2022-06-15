@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/E-commerce-website" element={<Products />} />
+        <Route path="/E-commerce-website/" element={<Products />} />
         <Route path="/productDetail/:id" element={<ProductDetail />} />
         <Route path="/Cart" element={<Cart />} />
         <Route path="/Wishlist" element={<Wishlist />} />
