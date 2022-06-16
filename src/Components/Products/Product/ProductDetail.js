@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../../Navbar/Navbar";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import "./ProductDetail.css";
@@ -13,6 +14,7 @@ export default function ProductDetail() {
   const product = Items.find((item) => item.id === parseInt(id));
   return (
     <>
+      <Navbar />
       <div className="backImage">
         <img src={product.imgdata} alt="" />
       </div>

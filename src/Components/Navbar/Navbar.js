@@ -11,9 +11,6 @@ import { useSelector } from "react-redux";
 function Navbar() {
   const cart = useSelector((state) => state.cart.cart);
   const wishlist = useSelector((state) => state.wishlist.wishlist);
-  console.log("whishlist", typeof wishlist);
-  console.log("whishlist", typeof cart);
-  console.log("wishlist", wishlist);
   const [cartCount, setCartCount] = useState(0);
   const [wishlistCount, setWishListCount] = useState(0);
   const [isOn, setOn] = useState(false);
@@ -46,8 +43,8 @@ function Navbar() {
       <div className={isOn ? "links-expanded" : "links"}>
         <div className="categories">
           <Link to="/">Products</Link>
-          <a href="">About</a>
-          <a href="">Sign Up</a>
+          <a href="/">About</a>
+          <a href="/">Sign Up</a>
         </div>
         <div className="baskets">
           <Link to="/Wishlist">
